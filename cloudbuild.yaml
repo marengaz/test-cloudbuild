@@ -1,0 +1,22 @@
+steps:
+
+  - id: mkdir
+    name: alpine
+    entrypoint: /bin/bash
+    args:
+      - "-c"
+      - "env && pwd && ls -la"
+
+
+
+substitutions:
+    _APP_NAME: test-cloudbuild woop
+
+
+tags:
+  - test-cloudbuild
+
+timeout: 60s
+
+options:
+    substitution_option: ALLOW_LOOSE
