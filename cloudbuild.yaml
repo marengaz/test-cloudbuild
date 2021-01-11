@@ -2,7 +2,7 @@ steps:
 
   - id: mkdir
     name: alpine
-    entrypoint: /bin/bash
+    entrypoint: /bin/sh
     args:
       - "-c"
       - "env && pwd && ls -la"
